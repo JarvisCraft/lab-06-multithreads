@@ -98,8 +98,8 @@ namespace hash_finder_lib::report_generator {
             "  },\n"
             "  {\n"
             "    \"timestamp\": 2109814120,\n"
-            "    \"hash\": \"" + ::picosha2::bytes_to_hex_string(hash2)+ "\",\n"
-            "    \"data\": \"" + ::picosha2::bytes_to_hex_string(data2)+ "\"\n"
+            "    \"hash\": \"" + ::picosha2::bytes_to_hex_string(hash3)+ "\",\n"
+            "    \"data\": \"" + ::picosha2::bytes_to_hex_string(data3)+ "\"\n"
             "  }\n"
             "]");
     }
