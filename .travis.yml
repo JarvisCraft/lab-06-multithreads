@@ -4,11 +4,10 @@ language: minimal
 addons:
   apt:
     update: true
-    packages:
-      - lcov gcovr
+    packages: [python3-pip, lcov, gcovr]
 
 install:
-  - pip install cpplint
+  - pip3 install cpplint
 
 jobs:
   include:
@@ -17,9 +16,7 @@ jobs:
     - name: "tests"
       script: ./scripts/tests.sh
     - name: "quality"
-      script:
-        - ./scripts/genenv.sh
-        - ./scripts/coverage.sh
+      script: ./scripts/coverage.sh
       # The bot has gone...
       # - docker run --env-file .env -v `pwd`:`pwd` -w `pwd` -t rusdevops/bootstrap-cpp scripts/duplication.sh
 
