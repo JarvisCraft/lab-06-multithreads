@@ -13,7 +13,7 @@ install:
 jobs:
   include:
     - name: "checks"
-      script: scripts/checks.sh
+      script: ./scripts/checks.sh
     - name: "tests"
       script: ./scripts/tests.sh
     - name: "quality"
