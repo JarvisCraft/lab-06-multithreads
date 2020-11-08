@@ -24,3 +24,8 @@ notifications:
 branches:
   except:
     - master
+
+cache:
+  directories:
+    - /root/.hunter
+    - ~/.hunter
