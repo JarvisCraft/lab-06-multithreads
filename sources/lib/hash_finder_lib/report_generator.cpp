@@ -13,6 +13,11 @@ namespace hash_finder_lib::report_generator {
     }
 
     void generate_report(::std::ostream& output, std::vector<::hash_finder_lib::worker::Result> const& results) {
+        if (results.empty()) {
+            output << "[]";
+            return;
+        }
+
         output << "[\n";
 
         {
